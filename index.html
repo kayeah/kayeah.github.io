@@ -12,24 +12,48 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+   
   </head>
   <body>
+
+    <div id="m_nav" class="d-none">
+      <ul>
+        <li><a href="#box_A">Introduction</a></li>
+        <li><a href="#box_B">Menu</a></li>
+        <li><a href="#box_C">Wine Types</a></li>
+        <li><a href="#box_D">Contact Us</a></li>
+        <li><a href="#image04">Map</a></li>
+      </ul>
+    </div>
+
     <a name="top" id="top"></a> 
 
     <div id="all" class="container_fluid">
         <div id="header" class="row">
-            <div id="logo" class="col-lg-offset-5"></div>            
+            <div id="logo" class="col-lg-offset-5 col-md-offset-5 col-sm-offset-5 col-xs-offset-5"></div>
+        
+              <div id="js-hamburger" class="hamburger">
+                <span class="first"></span>
+                <span class="second"></span>
+                <span class="third"></span>
+              </div>
         </div>
 
-            <div id="nav" class="row" style="font-family:'微軟正黑體';font-weight:bolder; font-size: 16px;">
-                <ul id=navbar class="row" align="center">
-                    <li class="col"><a href="#box_A">Introduction</a></li>
-                    <li class="col"><a href="#box_B">Menu</a></li>
-                    <li class="col"><a href="#box_C">Wine Types</a></li>
-                    <li class="col"><a href="#box_D">Contact Us</a></li>
-                    <li class="col-1"><a href="#map">Map</a></li>
-                </ul>
-            </div>
+        
+
+          <div id="ontopDiv" class="col-lg-12 text1">
+            <ul class="row" align="center">
+                <li class="col"><a href="#box_A">Introduction</a></li>
+                <li class="col"><a href="#box_B">Menu</a></li>
+                <li class="col"><a href="#box_C">Wine Types</a></li>
+                <li class="col"><a href="#box_D">Contact Us</a></li>
+                <li class="col"><a href="#image04">Map</a></li>
+            </ul> 
+          </div>
+              
+            
 
         <div id="slider" class="row">
             <div class="container-fluid">
@@ -44,26 +68,26 @@
                   <li data-target="#myCarousel" data-slide-to="4"></li>
                 </ol>
 
-                <!-- Wrapper for slides -->
+                  <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                   <div class="item active">
-                    <img src="img/jazz02.jpg" alt="爵士之夜" background-size="cover">
+                    <img src="img/slider_1.jpg" alt="爵士之夜" background-size="contain">
                   </div>
 
                   <div class="item">
-                    <img src="img/slider01.jpg" alt="微醺之夜" background-size="cover">
+                    <img src="img/slider_2.jpg" alt="微醺之夜" background-size="contain">
                   </div>
                 
                   <div class="item">
-                    <img src="img/slider02.jpg" alt="棒球之夜" background-size="cover">
+                    <img src="img/slider_3.jpg" alt="棒球之夜" background-size="contain">
                   </div>
 
                   <div class="item">
-                    <img src="img/jazz02.jpg" alt="文青之夜" background-size="cover">
+                    <img src="img/slider_4.jpg" alt="文青之夜" background-size="contain">
                   </div>
 
                   <div class="item">
-                    <img src="img/jazz02.jpg" alt="不醉不歸之夜" background-size="cover">
+                    <img src="img/slider_6.jpg" alt="不醉不歸之夜" background-size="contain">
                   </div>
                 </div>
 
@@ -83,7 +107,7 @@
 
 
         <div id="box_A">
-            <div id="introduction">
+                <div id="introduction"></div>
                 <div id="environment" class="row">
                     <div id="box_inside" class="row">
                         <div id="environment01" class="col-4"></div>
@@ -91,8 +115,8 @@
                         <div id="environment03" class="col"></div>
                     </div>
                 </div>
-                <div id="news">
-                    <div id="newsIn" align="center" style="font-family:'微軟正黑體' ;font-weight:bolder; font-size: 18px;"><h3 style="color: red"><b>ＮＥＷＳ！</b>台中的朋友注意囉！</h3>藍色大門將於９月３０日（六）正式開幕！<br>快來勤美找我們玩！當天單點任一調酒皆享７折優惠！</br>啤酒、無酒精飲料買一送一！這麼多好康當然要來阿！９/３０我們不見不散～</div>
+                <div id="news" class="row">
+                    <div id="newsIn" align="center" style="font-family:'微軟正黑體' ;font-weight:bolder; font-size: 18px; color: white;"><h3 style="color: red"><b>ＮＥＷＳ！</b>台中的朋友注意囉！</h3><br>藍色大門將於９月３０日（六）正式開幕！快來勤美找我們玩！當天單點任一調酒皆享７折優惠！</br>啤酒、無酒精飲料買一送一！這麼多好康當然要來阿！９/３０我們不見不散～</div>
                 </div>
                 <div id="partners" class="row">
                     <div id="partnersA" class="col-6"></div>
@@ -100,16 +124,15 @@
                     <div id="partnersC" class="col-6"></div>
                     <div id="partnersD" class="col-6"></div>
                 </div>
-            </div>
-            <div id="image01">image01</div>
+            <div id="image01"></div>
         </div>
         <div id="box_B">
             <div id="menu"></div>
-            <div id="image02">image02</div>
+            <div id="image02"></div>
         </div>
         <div id="box_C">
             <div id="winetype"></div>
-            <div id="image03">image03</div>
+            <div id="image03"></div>
         </div>
         <div id="box_D">
 
@@ -117,11 +140,11 @@
             </div>
 
             <div id="image04" class="row">
-                <div id="placeA" class="col"></div>
-                <div id="placeB" class="col"></div>
-                <div id="placeC" class="col"></div>
-                <div id="placeD" class="col"></div>
-                <div id="placeE" class="col"></div>
+                <div id="placeA" class="col-lg " align="center"></div>
+                <div id="placeB" class="col-lg " align="center"></div>
+                <div id="placeC" class="col-lg " align="center"></div>
+                <div id="placeD" class="col-lg " align="center"></div>
+                <div id="placeE" class="col-lg " align="center"></div>
             </div>
         </div>
         <div id="map" align="center" class="col-12"></div>
@@ -132,8 +155,10 @@
         <div id="mapSaturday">不醉不歸之夜</div>
         
         
-        <a href="#top"><p><button class="w3-button w3-block w3-black">回主頁</button></p></a>
-        <div id="footer" img src="img/warning.jpg"></div>
+        
+        <div id="footer" class="row-12"><a href="#top"><button class="w3-button w3-block w3-black container-fluid" style="font-family:'微軟正黑體' ;font-weight:bolder; font-size: 24px;">TOP</button></a></div>
+
+        
 
 
 
@@ -149,7 +174,9 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
     <script>
@@ -305,6 +332,35 @@
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfStTEQ1ADq9VWcN0cmW7ZWUI9y6pP_J8&callback=initMap"
     async defer></script>
+    
+    <script>
+      //onscroll = function() {
+    //var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+     //if (scrollTop =0) {
+       //  ('ontopDiv').hide;
+     //} else {
+      //   do something//
+    //}
+
+
+
+    </script>
+    <script>
+        $(function(){
+      
+      $("#js-hamburger").on("click", function(){
+        $(this).toggleClass('is-active');
+        $("#m_nav").toggleClass('d-none');
+      });
+
+      $("#m_nav a").on("click", function(){
+        //console.log('a click');
+        $(this).toggleClass('is-active');
+        $("#m_nav").toggleClass('d-none');
+      });
+
+    });</script>
+
 
 
   </body>
