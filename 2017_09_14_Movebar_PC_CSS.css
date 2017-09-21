@@ -182,7 +182,7 @@ a.ex2:hover,a.ex2:active {font-size:150%;}
 
 #partnersA{
 	height: 300px;
-	background-image: url('img/partners4.JPG');
+	background-image: url('img/partners4.jpg');
 	background-size: 150px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -193,21 +193,21 @@ a.ex2:hover,a.ex2:active {font-size:150%;}
 }
 #partnersB{
 	height: 300px;
-	background-image: url('img/partners2.JPG');
+	background-image: url('img/partners2.jpg');
 	background-size: 150px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 #partnersC{
 	height: 300px;
-	background-image: url('img/partners3.JPG');
+	background-image: url('img/partners3.jpg');
 	background-size: 150px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 #partnersD{
 	height: 300px;
-	background-image: url('img/partners1.JPG');
+	background-image: url('img/partners1.jpg');
 	background-size: 150px;
 	background-repeat: no-repeat;
 	background-position: center;
