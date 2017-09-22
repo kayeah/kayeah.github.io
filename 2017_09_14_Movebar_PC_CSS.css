@@ -20,6 +20,11 @@ font-size:108%;
 
 h1,h2,h3,h4,h5,h6{   font-weight:normal; }
 
+.place_btn{
+	cursor:pointer;
+
+}
+
 .nav_txt{
 	letter-spacing: 0.2em;
 }
@@ -73,7 +78,7 @@ ul{
 }
 
 li{
-	width: 100
+
 }
 
 
@@ -89,7 +94,6 @@ a.ex2:hover,a.ex2:active {font-size:150%;}
 }
 
 #box_A{
-	height: 1600px;
 }
 
 #introduction{
@@ -227,6 +231,7 @@ a.ex2:hover,a.ex2:active {font-size:150%;}
 	height: 100vh;
 	background-image: url('img/wine01.jpg');
 	background-size: cover;
+	background-attachment: fixed;
 
 }
 
@@ -255,6 +260,7 @@ a.ex2:hover,a.ex2:active {font-size:150%;}
 	background-repeat:no-repeat;
 	background-position: center;
 	z-index: 3;
+	background-attachment: fixed;
 
 
 }
@@ -284,6 +290,7 @@ a.ex2:hover,a.ex2:active {font-size:150%;}
 	background-size: cover;
 	background-position: bottom;
 	z-index: 3;
+	background-attachment: fixed;
 }
 
 #box_D{
@@ -306,7 +313,7 @@ a.ex2:hover,a.ex2:active {font-size:150%;}
 	background-position: center;
 	padding: 0;
 	margin: 0;
-
+	background-attachment: fixed;
 	margin-bottom: 20px;
 }
 
@@ -637,7 +644,7 @@ padding-top: 1em;
 }
 #image01{
 	background-size: cover;
-
+	background-attachment: fixed;
 	background-repeat: no-repeat;
 
 
