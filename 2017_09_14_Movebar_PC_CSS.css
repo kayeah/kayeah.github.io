@@ -307,7 +307,7 @@ a.ex2:hover,a.ex2:active {font-size:150%;}
 }
 
 #image04{
-	height: 80vh;
+	height: 100vh;
 	background-image: url('img/placeX.jpg');
 	background-size: cover;
 	background-position: center;
