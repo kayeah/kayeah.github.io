@@ -478,7 +478,7 @@ padding-top: 1em;
   font-size: 12px;
   cursor: pointer;
   position: relative;
-  color: red;
+  color: darkred;
 }
 
 #m_nav{
@@ -523,7 +523,7 @@ padding-top: 1em;
 
 .first, .second, .third {
   position: absolute;
-  background-color: red;
+  background-color: darkred;
   height: .5em;
   width: 100%;
   float: left;
