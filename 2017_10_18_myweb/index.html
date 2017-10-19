@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<title>KAY's</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="shortcut icon" href="img/heart.ico" type="image/x-icon">
+<link rel="icon" href="img/heart.ico" type="image/x-icon">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", 微軟正黑體, sans-serif}
+.w3-third img{margin-bottom: -6px; opacity: 0.7; cursor: pointer}
+.w3-third img:hover{opacity: 1;transform:rotate(-7deg)}
+#mySidebar li{height:;overflow:hidden;}
+#mySidebar span{display:block;margin-top:-30px;}
+#mySidebar a{ overflow:hidden;}
+#mySidebar a:hover{ height:50px;overflow:hidden;padding-top:30px;}
+
+</style>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold; letter-spacing:0.1em; " id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center"><b>YE<br>TING<br>WEI</b></h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button" style="transition: 0.2s"><span>作  品  集</span>PORTFOLIO</a> 
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button" style="transition: 0.2s"><span>關  於  我</span>ABOUT ME</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button" style="transition: 0.2s"><span>聯  絡  方  式</span>CONTACT</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">YE TING WEI</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Photo grid -->
+  <div class="w3-row">
+    <div class="w3-third">
+      <img src="img/polar-bear-poly1.jpg" style="width:100%" onclick="onClick(this)" alt="Low poly art">
+      <img src="img/xuin.png" style="width:100%" onclick="onClick(this)" alt="Low poly art">
+      <img src="img/領帶名片設計s.jpg" style="width:100%" onclick="onClick(this)" alt="領帶名片設計 business card design">
+    </div>
+
+    <div class="w3-third">
+      <img src="img/street03.jpg" style="width:100%" onclick="onClick(this)" alt="街景精細繪圖 street view">
+      <img src="img/postcards.jpg" style="width:100%" onclick="onClick(this)" alt="明信片設計 Postcard Design<br>約翰藍儂曾說過”Love is a flower, you’ve got to let it grow.”<br>每朵花、每個人、每種愛在生命面前都是平等的，有各自的盛開凋落、各自存在的理由。<br>百花因為彼此存在差異而齊放，人生也因為擁抱不同而變得精采。希望每個人都能活得自由自在，找到自己生而為人的價值和意義。">
+      <img src="img/webposters.jpg" style="width:100%" onclick="onClick(this)" alt="LE BLEU藍色大門移動酒吧專案">
+    </div>
+    
+    <div class="w3-third">
+      <img src="img/picturebooks.jpg" style="width:100%" onclick="onClick(this)" alt="我不是故意的<br>「老師，艾瑞克又發出怪聲音了！」<br>艾瑞克是一名從小患有妥瑞氏症的孩子。上課時，身體會不自覺抖動、喉嚨發出怪聲，
+老師同學用異樣眼光看他，爸媽也為此成天吵架，某夜，難過又自卑的艾瑞克，終於受不了而逃出家門......<br>希望透過此繪本，讓大家了解妥瑞氏孩子的內心世界，接納彼此的不同，更要認識自己，發覺自己的獨有天賦。">
+      <img src="img/gradientmesh.png" style="width:100%" onclick="onClick(this)" alt="漸層網格 Gradient Mesh">
+      <img src="img/postcard3.jpg" style="width:100%" onclick="onClick(this)" alt="十月微涼、百花凋零、萬物蕭瑟。何處合成愁？離人心上秋。這是幫同學設計的十月份月曆，集結很多人的創意和繪風，最後組合成一本非常有特色的年計畫書，很高興能參與其中。">
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <!--<div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>-->
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b>About Me</b></h4>
+    <img src="img/avatar2.jpg" alt="Me" class="w3-image w3-padding-32" width="600" height="600">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>YE TING WE</h4>
+      <p><b><img src="img/heart.ico" alt="logo" width="20">關於我</b><br>
+我是葉庭溦，1994年冬天生，今年22歲。在家排行老大，上有一個老母，下有兩個弟妹。國二父親因病去世，但也讓我更珍惜現在所擁有的。家庭雖不富裕但生活簡單和樂。<br><br>
+
+<b><img src="img/heart.ico" alt="logo" width="20">學習歷程 Stay hungry, Stay Foolish</b><br>
+畢業於弘光科大應用英語系，輔修文化創意產業系。上大學後給自己下了學習“第二專長”的戰帖，需要比別人多花一倍時間學習外系的課程，因此學分常常爆滿或衝堂，時間分配與規劃十分重要。獨自修習課程時，常常會遇到必須與陌生人分組的時刻，鼓起勇氣搭訕別人是每天要練習的，養成了開朗大方不害羞的個性，因為這樣認識了很多很有才華的外系同學，從他們身上學到很多東西，也認知到自己的不足。應外本科並沒有因為副系而荒廢，成績總能保持在前幾名的水準，大三幸虧如此而能優先選擇到知名食品企業的外貿部實習，學習國貿相關事務、翻譯文件、關心國際大小事、上臺報告...，度過一段非常充實的實習生活。因為太喜歡上課，也修了一些非必修課程，有時甚至會去旁聽整個學期、或到隔壁學校聽感興趣的講座，沒有學分也無所謂，學習對我來說就是這樣快樂的事！<br><br>
+
+<b><img src="img/heart.ico" alt="logo" width="20">社團生活 United is strength</b><br>
+大二接手系學會的幹部，從辦活動的過程中也學到很多團隊合作、與他人溝通的技巧，了解一個活動從無到有，必須倚賴非常多人的努力付出才做的到。當美宣的日子裡，常常為了做道具在學校待到很晚才回家，但因為是喜歡做的事，雖然辛苦卻從不喊累。除了道具以外，一場成功的表演活動最重要的其實在於“人”。道具設計的再好，沒有人跟你一起做也沒用。曾為了找齊幫手把所有學弟妹的line 加過一輪，細細了解每個人的行程狀況，集結足夠人手共同製作道具，規劃安排人力及道具跑位，或是和人交流想法、討論製程、甚至是吵架談判，在團隊合作中每每都能讓我從中發現值得學習或需要改進的地方，感謝這些寶貴的活動經驗讓我的大學時光增添許多光彩。<br><br>
+
+<b><img src="img/heart.ico" alt="logo" width="20">未來規劃 Whatever is worth doing is worth doing well</b><br>
+今年六月從大學畢業成為社會新鮮人，幾經考慮後沒有馬上進入職場，而是報名了職訓局的平面廣告與網頁設計班，精進自己的專業能力，並接觸到動畫與網頁前端等等全新的領域。在練習切板的過程中，發現網頁前端的有趣之處，如有搞不懂的地方，我會抱著追根究柢的精神，下課後回家繼續研究到三更半夜，搞定才睡得著。也感謝大學四年在應英系的學習，讓我除了老師上課教的東西以外，還能藉由自己的語言專長自行在網路上搜尋國外的教學範例來練習。所以我明白到：沒有任何過程會是白費的，所經之路都成為我成長的養分，讓我更茁壯、更健康。<br><br>
+
+在未來的職場生涯，只求自己的表現能盡善盡美、全力以赴，對社會帶來更多的貢獻。感謝您撥空閱讀我的自傳，希望能有機會與您面談。
+      </p>
+  
+      <hr class="w3-opacity">
+      <h4 class="w3-padding-16">Technical Skills</h4>
+      <p class="w3-wide">Photoshop</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide">Illustrator</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:95%">95%</div>
+      </div>
+      <p class="w3-wide">Web Design</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
+      </div>
+      <p class="w3-wide">Flash</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:70%">70%</div>
+      </div>
+      <p class="w3-wide">Dreamweaver</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
+      </div>
+
+      <br>
+      <h4 class="w3-padding-16">Language</h4>
+       <p class="w3-wide">Chinese</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:100%">100%</div>
+      </div>
+       <p class="w3-wide">English</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
+      </div>
+      <p class="w3-wide">Taiwanese</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide">Japanese</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:30%">30%</div>
+      </div>
+      <p><button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom">Download Resume</button></p>
+      <hr class="w3-opacity">
+
+
+      <div class="w3-row-padding" style="margin:0 -16px">
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact section -->
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:600px">
+      <h4 class="w3-center"><b>Contact Me</b></h4>
+      <form action="/action_page.php" target="_blank" align="center" style="letter-spacing: 0.3em">
+        <p>mail: <br>lida90025@gmail.com</p><br>
+        <p>tel: <br>0970-595-301</p><br>
+        <p>address: <br>台灣，台中</p>
+        
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">  
+    <div class="w3-row-padding">
+      <div class="w3-third">
+        <h3>MY DEMO</h3><p><a href="http://kayeah.byethost15.com/" target="_blank" class="w3-bar-item w3-button">切版練習</a></p>   
+      </div>
+    
+      <div class="w3-third">
+        <h3>OTHERS</h3>
+        <ul class="w3-ul">
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">ISSUU</span><br><a href="https://issuu.com/261923/docs/myportfolio1" target="_blank" class="w3-bar-item w3-button">My Portfolio</a>
+          </li>
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">PROJECT</span><br><a href="https://kayeah.github.io/" title="W3.CSS" target="_blank" class="w3-bar-item w3-button">LE BLEU</a>
+          </li> 
+        </ul>
+      </div>
+
+      <div class="w3-third">
+        <h3>My TAGS</h3>
+        <p>
+          <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Taiwan</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Taichung</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cats</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Painting</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Feminism</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Design</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Sodagreen</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Reading</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Moviegoer</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Books</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Shopping</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Volley Ball</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Games</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="#" title="W3.CSS" target="_blank" class="w3-hover-opacity">Kay</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>
